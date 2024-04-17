@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashbord</title>
+    <link rel="stylesheet" href="css/doctor.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="header_dash">
+
+        <div class="loh">
+            <i class="fa-solid fa-stethoscope"><span class="clog"><span> m</span>edical <span>c</span>are</span></i>
+        </div>
+
+        <div class="right_area">
+            <a href="#" class="logout_btn">Logout</a>
+        </div>
+    </div>
+    <div class="sidebar">
+
+        <div class="myprofile-photo">
+            <div class="profile">
+                <input type="file" class="my_file" name="" id="">
+            </div>
+            <h4>Admin</h4>
+        </div>
+
+
+        <a href="index.html"><i class="fa-sharp fa-solid fa-house"></i><span>Home</span></a>
+        <a href="#"><i class="fa-solid fa-solid fa-user-doctor"></i><span>Doctors</span></a>
+        <a href="editdocto.html" style="display: none;"><i class="fa-solid fa-solid fa-user-doctor"></i><span>Mange Doctors</span></a>
+        <a href="add-doctor.html" style="display: none;"><i class="fa-solid fa-solid fa-user-doctor"></i><span>Add Doctor</span></a>
+        <a href="user.html"><i class="fa-solid fa-user"></i><span>Users</span></a>
+        <a href="appointment.html"><i class="fa-solid fa-calendar-check"></i><span>Appointment</span></a>
+        <a href="patient.html"><i class="fa-solid fa-hospital-user"></i><span> Patient</span></a>
+    </div>
+    <div class="content">
+        <div class="sebtn">
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass "></i>
+                <input class="search-bar" placeholder="Search..." type="text">
+            </div>
+            <div class="dashbtn">
+                <a href="#">
+                    <button>home</button>
+                </a>
+            </div>
+        </div>
+
+
+        <!-- start doctors -->
+
+        <form action="index.html" method="post" class="inform">
+            <fieldset>
+                <div class="input-specification">
+
+                    <label for="">doctor specification</label>
+
+                    <input type="text" required placeholder="enter your specification">
+                </div>
+                <div class="specifacation-button">
+                    <button class="btn">submit</button>
+                </div>
+            </fieldset>
+        </form>
+
+        <!-- start manage doctor specification -->
+        <div class="mange-doctor-cation">
+            <h3>manage doctor specification</h3>
+        </div>
+        <div class="scroll">
+            <table>
+                <tr>
+                    <th>Specialization</th>
+                    <th>Creation Data</th>
+                    <th>Updatuin Date </th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+
+                    <td>General Physician</td>
+                    <td>2022-12-09 / 1:33 Am</td>
+                    <td class="active">Active</td>
+                    <td>
+                        <a href="edit-doctor.html"><i class="fa-solid fa-edit"></i></a>
+                        <i class="fa-solid fa-trash"></i>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td>General Physician</td>
+                    <td>2022-12-09 / 1:33 Am</td>
+                    <td class="active">Active</td>
+                    <td>
+                        <a href="edit-doctor.html"><i class="fa-solid fa-edit"></i></a>
+                        <i class="fa-solid fa-trash"></i>
+                    </td>
+
+                </tr>
+                <tr>
+
+                    <td>General Physician</td>
+                    <td>2022-12-09 / 1:33 Am</td>
+                    <td class="active">Active</td>
+                    <td>
+                        <a href="edit-doctor.html"><i class="fa-solid fa-edit"></i></a>
+                        <i class="fa-solid fa-trash"></i>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td>General Physician</td>
+                    <td>2022-12-09 / 1:33 Am</td>
+                    <td class="active">Active</td>
+                    <td>
+                        <a href="edit-doctor.html"><i class="fa-solid fa-edit"></i></a>
+                        <i class="fa-solid fa-trash"></i>
+                    </td>
+                </tr>
+        </div>
+        </table>
+
+    </div>
+
+    <!-- end manage doctor specification -->
+
+
+
+    <!-- end doctors -->
+
+
+    </div>
+    <script src="js/manage doctor.js"></script>
+    <script src="js/specilaization.js"></script>
+</body>
+
+</html>

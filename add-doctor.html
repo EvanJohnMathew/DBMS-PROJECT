@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Doctor</title>
+    <link rel="stylesheet" href="css/add-doctor.css">
+</head>
+<body>
+    <div class="header_dash">
+        <div class="loh">
+            <i class="fa-solid fa-stethoscope"><span class="clog"><span> m</span>edical <span>c</span>are</span></i>
+        </div>
+        <div class="right_area">
+            <a href="#" class="logout_btn">Logout</a>
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="myprofile-photo">
+            <div class="profile">
+                <input type="file" class="my_file" name="" id="">
+            </div>
+            <h4>Admin</h4>
+        </div>
+        <a href="index.html"><i class="fa-sharp fa-solid fa-house"></i><span>Home</span></a>
+        <a href="#"><i class="fa-solid fa-solid fa-user-doctor"></i><span>Doctors</span></a>
+        <a href="editdocto.html" style="display: none;"><i class="fa-solid fa-solid fa-user-doctor"></i><span>Mange Doctors</span></a>
+        <a href="add-doctor.html" style="display: none;"><i class="fa-solid fa-solid fa-user-doctor"></i><span>Add Doctor</span></a>
+        <a href="user.html"><i class="fa-solid fa-user"></i><span>Users</span></a>
+        <a href="appointment.html"><i class="fa-solid fa-calendar-check"></i><span>Appointment</span></a>
+        <a href="patient.html"><i class="fa-solid fa-hospital-user"></i><span> Patient</span></a>
+    </div>
+    <div class="content">
+        <div class="sebtn">
+            <div class="dashbtn">
+                <a href="#">
+                    <button>home</button>
+                </a>
+            </div>
+        </div>
+
+        <!-- start doctors -->
+        <form action="add_doctor.php" method="post" class="inform">
+            <fieldset>
+                <div class="input-specification">
+                    <label for="dname">Doctor Name</label>
+                    <input type="text" required name="dname" id="dname" placeholder="Enter Doctor Name">
+                </div>
+                <div class="input-specification">
+                    <label for="dgender">Doctor Gender</label>
+                    <input type="text" required name="dgender" id="dgender" placeholder="Enter Doctor Gender">
+                </div>
+                <div class="input-specification">
+                    <label for="specialization">Doctor Specialization</label>
+                    <input type="text" required name="specialization" id="specialization" placeholder="Enter Doctor Specialization">
+                </div>
+                <div class="input-specification">
+                    <label for="dcontact">Doctor Contact</label>
+                    <input type="text" required name="dcontact" id="dcontact" placeholder="Enter Doctor Contact">
+                </div>
+                <div class="input-specification">
+                    <label for="rating">Rating</label>
+                    <input type="text" required name="rating" id="rating" placeholder="Enter Doctor Rating">
+                </div>
+                <div class="input-specification">
+                    <label for="review">Review</label>
+                    <input type="text" required name="review" id="review" placeholder="Enter Review">
+                </div>
+                <div class="input-specification">
+                    <label for="hospital">Hospital</label>
+                    <input type="text" required name="hospital" id="hospital" placeholder="Enter Hospital">
+                </div>
+                <div class="input-specification">
+                    <label for="patient">Patient</label>
+                    <input type="text" required name="patient" id="patient" placeholder="Enter Patient">
+                </div>
+                <div class="input-specification">
+                    <label for="medical_rec">Medical Record</label>
+                    <input type="text" required name="medical_rec" id="medical_rec" placeholder="Enter Medical Record">
+                </div>
+                <div class="specifacation-button">
+                    <button type="submit" class="btn">Submit</button>
+                </div>
+            </fieldset>
+        </form>
+        <!-- end doctors -->
+    </div>
+</body>
+</html>

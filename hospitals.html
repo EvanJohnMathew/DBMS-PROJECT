@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="css/user.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styling for the profile form */
+        
+        body {
+            color: white;
+            /* Set text color to white */
+        }
+        
+        .profile-section {
+            padding: 20px;
+        }
+        
+        .profile-section h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="tel"],
+        .form-group input[type="date"],
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+            color: white;
+            /* Set text color to white */
+            background-color: transparent;
+            /* Make background transparent */
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+        }
+        
+        .optional {
+            color: #888;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+        
+        .btn-submit {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .btn-submit:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header_dash">
+        <div class="loh">
+            <img src="images/pulse.png" alt="My Logo" width="200" height="65">
+        </div>
+
+        <div class="right_area">
+            <a href="#" class="logout_btn">Logout</a>
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="myprofile-photo">
+            <div class="profile">
+                <input type="file" class="my_file" name="" id="">
+            </div>
+            <h4>User</h4>
+        </div>
+        <a href="index.html"><i class="fa-sharp fa-solid fa-house"></i><span>Home</span></a>
+        <a href="#"><i class="fa-solid fa-solid fa-user-doctor"></i><span>Doctors</span></a>
+        <a href="edit-doctor.html" style="display: none;"><i class="fa-solid fa-solid fa-user-doctor"></i><span>Mange Doctors</span></a>
+        <a href="add-doctor.html" style="display: none;"><i class="fa-solid fa-solid fa-user-doctor"></i><span>Add Doctor</span></a>
+        <a href="user1.html"><i class="fa-solid fa-user"></i><span>Users</span></a>
+        <a href="appointment.html"><i class="fa-solid fa-calendar-check"></i><span>Appointment</span></a>
+        <a href="patient.html"><i class="fa-solid fa-hospital-user"></i><span> Patient</span></a>
+        <a href="hospitals.html"><i class="fa-solid fa-hospital-user"></i><span> Hospitals</span></a>
+    </div>
+    <div class="content">
+        <div class="profile-section">
+            <h2>Hospital Details </h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="hospitalname">Hospital Name:</label>
+                    <input type="text" id="hospitalname" name="hospitalname" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cont">Contact Number:</label>
+                    <input type="tel" id="cont" name="cont" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="wards">Wards</label>
+                    <textarea id="wards" name="wards"required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="beds">Beds</label>
+                    <textarea id="beds" name="beds"required ></textarea>
+                </div>
+
+                <input type="submit" value="Save Changes" class="btn-submit">
+            </form>
+        </div>
+    </div>
+    <script src="js/manage doctor.js"></script>
+    <script src="js/patient.js"></script>
+</body>
+
+</html>
